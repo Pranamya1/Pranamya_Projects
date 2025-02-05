@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning App</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 70%;
+            width: 50%;
+            background-color: black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        textarea {
+            height: 15vh;
+            width: 80%;
+            outline: none;
+            border: none;
+            background-color: #000;
+            color: white;
+            padding: 10px;
+            resize: none;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        .input-one,
+        .input-two {
+            height: 5vh;
+            width: 80%;
+            margin: 10px 0;
+            padding: 5px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #333;
+            background-color: #222;
+            color: white;
+        }
+
+        button {
+            height: 5vh;
+            width: 50%;
+            background-color: #444;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <!-- Textarea for displaying the result -->
+            <textarea id="result" readonly></textarea>
+
+            <!-- Input fields -->
+            <input class="input-one" type="number" placeholder="Age" id="input-one">
+            <input class="input-two" type="text" placeholder="Gender (male/female)" id="input-two">
+
+            <!-- Submit button -->
+            <button onclick="good_morning()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function good_morning() {
+            // Retrieve input values
+            let x = parseInt(document.getElementById("input-one").value); // Age
+            let y = document.getElementById("input-two").value.toLowerCase(); // Gender (convert to lowercase for consistency)
+
+            // Initialize the greeting message
+            let message = "";
+
+            // Conditions based on age and gender
+            if (x > 25 && y === "male") {
+                document.getElementById("textarea").innerHTML = "Good Morning Sir";
+            } 
+            // else if (x < 25 && y === "female") {
+            //     message = "Good Morning 54  ";
+            // } 
+            // else if (x > 25 && y === "male") {
+            //     message = "Good Morning Bro";
+            // } 
+            // else if (x > 25 && y === "female") {
+            //     message = "Good Morning Ma'am";
+            //  } 
+
+            // Display the message in the textarea
+            document.getElementById("result").innerHTML = message;
+        }
+    </script>
+</body>
+
+</html>

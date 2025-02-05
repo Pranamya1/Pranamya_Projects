@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .main-container {
+            height: 140vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .upper {
+            height: 60%;
+            width: 100%;
+            background-color: yellowgreen;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav {
+            height: 12%;
+            width: 100%;
+            background-color: #151515;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left {
+            width: 15%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .img {
+            width: 50%;
+            height: 100%;
+        }
+
+        .menu {
+            width: 60%;
+            height: 100%;
+            color: white;
+        }
+
+        .right {
+            height: 100%;
+            width: 85%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav-item {
+            height: 100%;
+            width: 15%;
+            color: white;
+            font-size: 25px;
+        }
+
+        .nav-item button {
+            height: 60%;
+            width: 80%;
+            margin-top: 10%;
+        }
+
+        .bac-img {
+            height: 88%;
+            width: 100%;
+            background-color: teal;
+            background-image: url(../../ASSETS/IMAGES/restorant_img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .lower {
+            height: 40%;
+            width: 100%;
+            background-color: springgreen;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-item-one {
+            height: 50%;
+            width: 100%;
+            background-color: slategrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="upper">
+            <div class="nav">
+                <div class="left">
+                    <div class="img">
+                        <img src="../../ASSETS/IMAGES/menuimg.png" height="90vh" width="90vw">
+                    </div>
+                    <div class="menu">
+                        <h1>Menu</h1>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="nav-item" style="margin-left: 15%;">
+                        <p>Menu</p>
+                    </div>
+                    <div class="nav-item">
+                        <p>Rateing</p>
+                    </div>
+                    <div class="nav-item">
+                        <p>Reservation</p>
+                    </div>
+                    <div class="nav-item">
+                        <p>Categories</p>
+                    </div>
+                    <div class="nav-item"><button></button></div>
+                </div>
+            </div>
+            <div class="bac-img"></div>
+        </div>
+        <div class="lower">
+            <div class="menu-item-one">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="menu-item-two"></div>
+        </div>
+    </div>
+</body>
+
+</html>

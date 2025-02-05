@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning App</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 70%;
+            width: 50%;
+            background-color: black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        textarea {
+            height: 15vh;
+            width: 80%;
+            outline: none;
+            border: none;
+            background-color: #000;
+            color: white;
+            padding: 10px;
+            resize: none;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        .input-one,
+        .input-two,
+        .input-three {
+            height: 5vh;
+            width: 80%;
+            margin: 10px 0;
+            padding: 5px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #333;
+            background-color: #222;
+            color: white;
+        }
+
+        button {
+            height: 5vh;
+            width: 50%;
+            background-color: #444;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <!-- Textarea for displaying the result -->
+            <textarea id="result" readonly></textarea>
+
+            <!-- Input fields -->
+            <input class="input-one" type="number" placeholder="" id="input-one">
+            <input class="input-one" type="number" placeholder="" id="input-two">
+            <input class="input-one" type="number" placeholder="" id="input-three">
+
+
+            <!-- Submit button -->
+            <!-- <button onclick="()">Submit</button> -->
+        </div>
+    </div>
+
+    <script>
+
+        x = 100
+        x = (x > 100) ? "Fail" :
+            (x > 85) ? "A+" :
+                (x > 75) ? "A" :
+                    (x > 60) ? "B" :
+                        (x > 40) ? "c" :
+                            (x > 35) ? "D" :
+                                (x < 35) ? "Fail" : "Fail";
+
+        console.log(x)
+
+    </script>
+</body>
+
+</html>

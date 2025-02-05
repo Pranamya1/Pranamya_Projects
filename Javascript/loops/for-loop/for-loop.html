@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="forloop6()">Submit</button>
+    <p id="result"></p>
+    <script>
+        output = "";
+        let space = ' ';
+        function forloop() {
+            for (i = 1; i <= 100; i++) {
+                console.log(i)
+                document.getElementById('result').innerHTML += i + "<br>"
+            }
+        }
+
+        function forloop1() {
+            for (i = 1; i <= 100; i += 2) {
+                console.log(i)
+                document.getElementById('result').innerHTML += i + "<br>"
+            }
+        }
+
+        //===================================
+        function forloop2() {
+            for (i = 1; i <= 10; i++) {
+        console.log (`20 x ${i} = ${1* 20}`)
+                document.getElementById('result').innerHTML += `${i} = ${i * 20} <br>`;
+            }
+        }
+
+        function forloop3() {
+            for (let i = 1; i <= 10; i++) {
+                document.getElementById('result').innerHTML += '*' + '<br>'
+            }
+        }
+
+        function forloop4() {
+            for (let i = 0; i <= 20; i++) {
+                for (j = 1; j <= i ; j++ ){
+                    document.getElementById('result').innerHTML += "+";
+                }
+                document.getElementById('result').innerHTML += '+' + '<br>'
+            }
+            console.log(j)
+        }
+
+        function forloop5() {
+            for (let i = 0; i <= 2  ; i++) {
+                for (j = 1; j <= 4 ; j++ ){
+                    document.getElementById('result').innerHTML += "+";
+                }
+                document.getElementById('result').innerHTML += '+' + '<br>';
+            }
+            console.log(j)
+        }
+
+        function forloop6() {
+            for (i = 1; i <= 100; i++) {
+                print = 'hello world'
+                console.log(i)
+                document.getElementById('result').innerHTML += 'hello world' + "<br>"
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
