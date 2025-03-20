@@ -110,7 +110,7 @@ h2 {
   border-radius: 0 0 1.5rem 1.5rem;
   overflow: hidden;
 }
-img {
+.my-img {
   height: 100%;
   width: 130%;
   margin-left: -15%;
