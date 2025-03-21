@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: #000;
+        }
+
+        button {
+            height: 8vh;
+            width: 30vw;
+            margin-left: 5vw;
+        }
+
+        .but-dis {
+height: 80vh;
+width: 40vw;
+background-color: #151515;
+border-radius: 1rem;
+        }
+
+    </style>
+
+    <script>
+        function days(a) {
+            let day = 0;
+            switch (a) {
+                case 0:
+                    day = Sunday;
+                    break;
+
+                case 0:
+                    day = Monday;
+                    break;
+
+                case 0:
+                    day = Tuesday;
+                    break;
+
+                case 0:
+                    day = Wednesday;
+                    break;
+
+                case 0:
+                    day = thusday;
+                    break;
+
+                case 0:
+                    day = Friday;
+                    break;
+
+                case 0:
+                    day = Saturday;
+            }
+        }
+
+        document.getElementById("display") = day;
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="but-dis">
+            <div class="display" id="display"></div>
+            <button>Sunday</button><br>   
+            <button>Monday</button><br>
+            <button>Tuesday</button><br>
+            <button>Wednesday</button><br>
+            <button>day</button><br>
+            <button>day</button><br>
+            <button>day</button>
+        </div>
+    </div>
+</body>
+
+</html>

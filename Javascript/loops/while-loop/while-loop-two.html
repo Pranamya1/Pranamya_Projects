@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vh;
+            background-color: #151515;
+        }
+
+        button {
+            height: 10vh;
+            width: 10vw;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="loop2()">Click</button>
+
+    <script>
+
+// ==================================================== Days And Hours ================================================`
+
+        function loop1() {
+            let x = 1;
+            while (x < 366) {
+                console.log("Day--", x)
+                x++;
+                let y = 1;
+                while (y <= 24) {
+                    console.log("Hour--", y);
+                    y++;
+                }
+            }
+        }
+
+// ================================================== Star Pattern ============================================//
+        function loop2() {
+            let x = 0;
+            let y = " ";
+            let z = -1;
+            while (x <= 7) {
+                let a = 5;
+                while (a <= x) {
+                    a += "+"
+                    x++
+                }
+                y += "*"
+                x++;
+                console.log(y)
+            }
+        }
+    </script>
+</body>
+
+</html>
