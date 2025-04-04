@@ -115,12 +115,12 @@ gsap.from([".show-project", ".project-navitem-container"], {
 
 gsap.from(".contact-info-card",{
     opacity: 0,
-    x: -100,
-    duration: 1.5,
+    x: 0,
+    duration: 2.5,
     scrollTrigger:{
-        trigger:".contact",
+        trigger:"#contact",
         scroller:"body",
-        start: "top 70%",
+        start: "top 10%",
         end: "top 10%",
         toggleActions: "play reverse play reverse",
         scrub: 2,
