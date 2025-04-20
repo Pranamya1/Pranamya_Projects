@@ -1,26 +1,12 @@
+function showProjects(category) {
+    document.getElementById("project-title").innerHTML = category.toUpperCase();
 
-// Js for project section,
-// Selected project appear
-
-document.querySelector(".project-navbar").addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default anchor behavior
-
-    let target = event.target.closest(".project-navitem"); // Ensure clicking on <div> works too
-    if (!target) return; // If clicked outside, do nothing
-
-    let category = target.getAttribute("data-category"); // Get selected category
-
-    // Change the title
-    document.getElementById("project-title").innerText = category.toUpperCase();
-
-    // Hide all project sections
     document.getElementById("html-projects").style.display = "none";
     document.getElementById("css-projects").style.display = "none";
     document.getElementById("javascript-projects").style.display = "none";
     document.getElementById("bootstrap-projects").style.display = "none";
     document.getElementById("react-projects").style.display = "none";
 
-    // Show the selected project section
     if (category === "html") {
         document.getElementById("html-projects").style.display = "flex";
     } else if (category === "css") {
@@ -32,7 +18,8 @@ document.querySelector(".project-navbar").addEventListener("click", function (ev
     } else if (category === "react") {
         document.getElementById("react-projects").style.display = "flex";
     }
-});
+}
+
 
 // Animation
 // Animation fo home section
@@ -58,17 +45,17 @@ gsap.from("h1", {
     delay: 1
 })
 
-gsap.from(".typing", {
+gsap.from(".lap-typing", {
     opacity: 0,
     x: -100,
     duration: 1,
     delay: 1.5
 })
 
-gsap.from(".img-one", {
+gsap.from(".lap-img-one", {
     opacity: 0,
-    y: -100,
-    duration: 1.5,
+    x: 350,
+    duration: 2,
     delay: 0.5
 })
 
@@ -102,7 +89,6 @@ gsap.from([".html", ".css", ".js", ".react"], {
 
 gsap.from([".show-project", ".project-navitem-container"], {
     opacity: 0,
-    y: 0,
     duration: 1.5,
     scrollTrigger: {
         trigger: ".project",
@@ -114,16 +100,75 @@ gsap.from([".show-project", ".project-navitem-container"], {
     }
 })
 
-gsap.from(".contact-info-card",{
+gsap.from(".contact-info-card", {
     opacity: 0,
-    x: -100,
     duration: 1.5,
-    scrollTrigger:{
-        trigger:".contact",
-        scroller:"body",
+    scrollTrigger: {
+        trigger: ".contact",
+        scroller: "body",
         start: "top 70%",
         end: "top 10%",
         toggleActions: "play reverse play reverse",
         scrub: 2,
     }
 })
+
+gsap.from(".icons", {
+    opacity: 0,
+    duration: 5
+})
+
+gsap.to(".lap-fis-navbar", {
+    scrollTrigger: {
+        trigger: ".home",
+        scroller: "body",
+        start: "top 0%",
+        end: "top -10%",
+        toggleActions: "play none none reverse",
+        scrub: 2,
+    },
+    opacity: 0,
+    duration: .5,
+    x: -60,
+    y: -150,
+    PointerEvent: "none",
+})
+
+if (window.innerWidth >= 1024) { // You can use 768 if you want tablets included
+    gsap.fromTo(".lap-second-navbar",
+      {
+        opacity: 0,
+        zIndex: 0,
+        cursor: "default",
+        pointerEvents: "none",
+      },
+      {
+        scrollTrigger: {
+          trigger: ".home",
+          scroller: "body",
+          start: "top 0%",
+          end: "top -10%",
+          toggleActions: "play none none reverse",
+          scrub: 2
+        },
+        opacity: 1,
+        duration: 1,
+        zIndex: 1000,
+        pointerEvents: "auto"
+      }
+    );
+  }
+  
+  
+// Slide Bar (navigation bar for mobile and tablet)
+
+function mob_slidingNavbar() {
+    const mob_slidebar = document.getElementById("mob_slidebar");
+    mob_slidebar.classList.toggle("active");
+  }
+
+  function closeNavbarOnScroll() {
+    document.getElementById("mob_slidebar").classList.remove("active");
+  }
+
+  window.onscroll = closeNavbarOnScroll;

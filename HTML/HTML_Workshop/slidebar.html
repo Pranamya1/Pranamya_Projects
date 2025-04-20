@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #121212;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .mob-btn-back {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 1001;
+    }
+
+    .mob-slide-button {
+      font-size: 1.5rem;
+      background-color: #181818;
+      height: 2.5rem;
+      width: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.3rem;
+      border: 1px solid #009dff;
+      cursor: pointer;
+    }
+
+    #mob_slidebar {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 100vh;
+      width: 80vw;
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+      padding-top: 4rem;
+      transition: left 0.3s ease-in-out;
+      z-index: 1000;
+    }
+
+    #mob_slidebar.active {
+      left: 0;
+    }
+
+    .mob-navitem {
+      padding: 1rem 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (min-width: 321px) {
+      #mob_slidebar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="mob-btn-back">
+    <div class="mob-slide-button" onclick="mob_slidingNavbar()">☰</div>
+  </div>
+
+  <div class="lap-second-navbar" id="mob_slidebar">
+    <a href="#home" class="mob-navitem">Home</a>
+    <a href="#about" class="mob-navitem">About</a>
+    <a href="#project" class="mob-navitem">Projects</a>
+    <a href="#exp" class="mob-navitem">Experiments</a>
+    <a href="#" class="mob-navitem">OOPS</a>
+    <a href="#" class="mob-navitem">Contacts</a>
+  </div>
+
+  <script>
+    function mob_slidingNavbar() {
+      const mob_slidebar = document.getElementById("mob_slidebar");
+      mob_slidebar.classList.toggle("active");
+    }
+
+    function closeNavbarOnScroll() {
+      document.getElementById("mob_slidebar").classList.remove("active");
+    }
+
+    window.onscroll = closeNavbarOnScroll;
+  </script>
+
+</body>
+</html>
