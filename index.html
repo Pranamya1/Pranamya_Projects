@@ -18,11 +18,11 @@
         <!-- Home section -->
         <div class="lap-home mob-home" id="home">
             <!-- background video -->
-            <!-- <div class="bg-wrapper">
+            <div class="bg-wrapper">
                 <video class="bg-video" autoplay muted loop>
                     <source src="ASSETS/VIDEO/background.mp4" type="video/mp4" />
                 </video>
-            </div> -->
+            </div>
             <!-- navbar saction -->
             <div class="navbar-sec">
                 <!-- nav bar for laptop -->
@@ -61,7 +61,7 @@
                     <a href="#project" class="lap-second-navitem mob-navitem">Projects</a>
                     <a href="#exp" class="lap-second-navitem mob-navitem">Experiments</a>
                     <a href="#" class="lap-second-navitem mob-navitem">OOPS</a>
-                    <a href="#" class="lap-second-navitem mob-navitem">Contacts</a>
+                    <a href="#contact" class="lap-second-navitem mob-navitem">Contacts</a>
                     <div class="mob-navitems-icons">
                         <div class="mob-nav-icons">
                             <a href="" class="fab fa-github"></a>
@@ -166,7 +166,7 @@
                     </div>
 
                     <!-- CSS Projects -->
-                    <div class="lap-project-category" id="css-projects" style="display: none;">
+                    <div class="lap-project-category mob-project-category" id="css-projects" style="display: none;">
                         <div class="lap-part-one mob-part-one">
                             <a class="lap-project-card mob-project-card lap-box-one" href="#">1</a>
                             <a class="lap-project-card mob-project-card lap-box-two" href="#">2</a>
@@ -178,9 +178,8 @@
                             <a class="lap-project-card mob-project-card lap-box-six" href="#">6</a>
                         </div>
                     </div>
-
-                    <!-- JavaScript Projects -->
-                    <div class="lap-project-category" id="javascript-projects" style="display: none;">
+                    <!-- JS Projects -->
+                    <div class="lap-project-category mob-project-category" id="javascript-projects" style="display: none;">
                         <div class="lap-part-one mob-part-one">
                             <a class="lap-project-card mob-project-card lap-box-one" href="#">1</a>
                             <a class="lap-project-card mob-project-card lap-box-two" href="#">2</a>
@@ -192,9 +191,8 @@
                             <a class="lap-project-card mob-project-card lap-box-six" href="#">6</a>
                         </div>
                     </div>
-
                     <!-- Bootstrap Projects -->
-                    <div class="lap-project-category" id="bootstrap-projects" style="display: none;">
+                    <div class="lap-project-category mob-project-category" id="bootstrap-projects" style="display: none;">
                         <div class="lap-part-one mob-part-one">
                             <a class="lap-project-card mob-project-card lap-box-one" href="#">1</a>
                             <a class="lap-project-card mob-project-card lap-box-two" href="#">2</a>
@@ -206,9 +204,8 @@
                             <a class="lap-project-card mob-project-card lap-box-six" href="#">6</a>
                         </div>
                     </div>
-
                     <!-- React Projects -->
-                    <div class="lap-project-category" id="react-projects" style="display: none;">
+                    <div class="lap-project-category mob-project-category" id="react-projects" style="display: none;">
                         <div class="lap-part-one mob-part-one">
                             <a class="lap-project-card mob-project-card lap-box-one" href="#">1</a>
                             <a class="lap-project-card mob-project-card lap-box-two" href="#">2</a>
@@ -225,27 +222,32 @@
                 <div class="lap-project-navbar mob-project-navbar">
                     <div class="lap-project-navitem-container mob-project-navitem-container">
                         <!--project navitem  -->
-                        <a class="lap-project-navitem mob-project-navitem" href="#lap-project-title" onclick="showProjects('html')">
+                        <a class="lap-project-navitem mob-project-navitem" href="#project-title"
+                            onclick="showProjects('html')">
                             <div>
                                 <div>HTML</div>
                             </div>
                         </a>
-                        <a class="lap-project-navitem mob-project-navitem" href="#lap-project-title" onclick="showProjects('css')">
+                        <a class="lap-project-navitem mob-project-navitem" href="#project-title"
+                            onclick="showProjects('css')">
                             <div>
                                 <div>CSS</div>
                             </div>
                         </a>
-                        <a class="lap-project-navitem mob-project-navitem" href="#lap-project-title" onclick="showProjects('javascript')">
+                        <a class="lap-project-navitem mob-project-navitem" href="#project-title"
+                            onclick="showProjects('javascript')">
                             <div>
                                 <div>JavaScript</div>
                             </div>
                         </a>
-                        <a class="lap-project-navitem mob-project-navitem" href="#lap-project-title" onclick="showProjects('bootstrap')">
+                        <a class="lap-project-navitem mob-project-navitem" href="#project-title"
+                            onclick="showProjects('bootstrap')">
                             <div>
                                 <div>Bootstrap</div>
                             </div>
                         </a>
-                        <a class="lap-project-navitem mob-project-navitem" href="#lap-project-title" onclick="showProjects('react')">
+                        <a class="lap-project-navitem mob-project-navitem" href="#project-title"
+                            onclick="showProjects('react')">
                             <div class="lap-project-navitem-lap">
                                 <div>React</div>
                             </div>
@@ -256,11 +258,11 @@
         </div>
         <!-- Project section end -->
         <!-- Experiments section -->
-        <div class="lap-exp" id="exp">
+        <div class="lap-exp mob-exp" id="exp">
             <!-- Experiments heading -->
             <div class="lap-heading-of">
                 <div class="lap-extra"></div>
-                <div class="lap-heading">
+                <div class="lap-heading mob-heading">
                     <p>Experiments</p>
                 </div>
             </div>
@@ -277,36 +279,36 @@
         </div>
         <!-- Experiments section end -->
         <!-- Contact section -->
-        <div class="lap-contact" id="contact">
+        <div class="lap-contact mob-contact" id="contact">
             <!-- Contact heading -->
             <div class="lap-heading-of">
                 <div class="lap-extra"></div>
-                <div class="lap-heading">
+                <div class="lap-heading mob-heading">
                     <p>Contact</p>
                 </div>
             </div>
             <!-- Contact content -->
-            <div class="lap-contact-container">
-                <div class="lap-contact-info">
-                    <div class="lap-my-info">
+            <div class="lap-contact-container mob-contact-container">
+                <div class="lap-contact-info mob-contact-info">
+                    <div class="lap-my-info mob-my-info">
                         <!-- contact card -->
-                        <div class="lap-contact-info-card">
-                            <div class="lap-logo-img">
-                                <img class="lap-logo-fit" src="ASSETS/IMAGES/call.png" alt="Phone">
+                        <div class="lap-contact-info-card mob-contact-info-card">
+                            <div class="lap-logo-img mob-logo-img">
+                                <img class="lap-logo-fit mob-logo-fit" src="ASSETS/IMAGES/call.png" alt="Phone">
                             </div>
-                            <div class="lap-info">+91 84213 19751</div>
+                            <div class="lap-info mob-info">+91 84213 19751</div>
                         </div>
-                        <div class="lap-contact-info-card">
-                            <div class="lap-logo-img">
-                                <img class="lap-logo-fit" src="ASSETS/IMAGES/email.webp" alt="Email">
+                        <div class="lap-contact-info-card mob-contact-info-card">
+                            <div class="lap-logo-img mob-logo-img">
+                                <img class="lap-logo-fit mob-logo-fit" src="ASSETS/IMAGES/email.webp" alt="Email">
                             </div>
-                            <div class="lap-info">pranamya653@gmail.com</div>
+                            <div class="lap-info mob-info">pranamya653@gmail.com</div>
                         </div>
-                        <div class="lap-contact-info-card">
-                            <div class="lap-logo-img">
-                                <img class="lap-logo-fit" src="ASSETS/IMAGES/location.png" alt="Location">
+                        <div class="lap-contact-info-card mob-contact-info-card">
+                            <div class="lap-logo-img mob-logo-img">
+                                <img class="lap-logo-fit mob-logo-fit" src="ASSETS/IMAGES/location.png" alt="Location">
                             </div>
-                            <div class="lap-info">Nagpur, Maharashtra, India</div>
+                            <div class="lap-info mob-info">Nagpur, Maharashtra, India</div>
                         </div>
                     </div>
                 </div>
@@ -314,14 +316,14 @@
         </div>
         <!-- Contact section end -->
         <!-- Footer section -->
-        <footer class="lap-footer">
-            <div class="lap-footer-container">
-                <div class="lap-footer-left">
+        <footer class="lap-footer mob-footer">
+            <div class="lap-footer-container mob-footer-container">
+                <div class="lap-footer-left mob-footer-left">
                     <p class="copyright">&copy; 2025 Pranamya Kalambe | All Rights Reserved</p>
                 </div>
-                <div class="lap-footer-right">
-                    <h4>Follow Me</h4>
-                    <div class="lap-social-icons">
+                <div class="lap-footer-right mob-footer-right">
+                    <h4>Contact Me</h4>
+                    <div class="lap-social-icons mob-social-icons">
                         <a href="https://www.linkedin.com/in/pranamya-kalambe-a3594b319/">
                             <img src="ASSETS/IMAGES/linked-in.jpg">
                         </a>
