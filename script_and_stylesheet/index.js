@@ -1,16 +1,14 @@
+//
 function showProjects(category) {
     document.getElementById("project-title").innerHTML = category.toUpperCase();
 
-    document.getElementById("html-projects").style.display = "none";
-    document.getElementById("css-projects").style.display = "none";
+    document.getElementById("html_css-projects").style.display = "none";
     document.getElementById("javascript-projects").style.display = "none";
     document.getElementById("bootstrap-projects").style.display = "none";
     document.getElementById("react-projects").style.display = "none";
 
-    if (category === "html") {
-        document.getElementById("html-projects").style.display = "flex";
-    } else if (category === "css") {
-        document.getElementById("css-projects").style.display = "flex";
+    if (category === "html_css") {
+        document.getElementById("html_css-projects").style.display = "flex";
     } else if (category === "javascript") {
         document.getElementById("javascript-projects").style.display = "flex";
     } else if (category === "bootstrap") {
