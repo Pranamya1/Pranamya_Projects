@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranamya | Resume</title>
+    <link rel="icon" type="image/png" href="../../ASSETS/IMAGES/portfolio_logo.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:wght@400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 201vh;
+            background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
+        }
+
+        .resume {
+            width: 80%;
+            height: 90%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            overflow-y: auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .upper-sec {
+            width: 100%;
+            height: 30%;
+            background-color: #151515;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .img-sec {
+            width: 35%;
+            height: 100%;
+            border-radius: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .my-img {
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+            border: 5px solid white;
+            background-color: #b0b0b0;
+            transition: transform 0.3s ease;
+        }
+
+        .my-img:hover {
+            transform: scale(1.05);
+        }
+
+        .name-sec {
+            width: 70%;
+            height: 100%;
+            border-radius: 0 10px 0 0;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            flex-direction: column;
+        }
+
+        .my-name {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'Edu AU VIC WA NT Hand', sans-serif;
+            font-weight: 600;
+            background: linear-gradient(180deg, #009dff, #00334d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .summary {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            color: #d4d4d4;
+            max-width: 50vw;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .summary p {
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .lower-sec {
+            width: 100%;
+            height: 70%;
+            background-color: aliceblue;
+            border-radius: 0 0 10px 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .part-one,
+        .part-two {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .skills {
+            width: 20%;
+            height: 50%;
+            padding: 20px;
+        }
+
+        .about {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #333333;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .web-dev {
+            width: 20%;
+            height: 50%;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            color: #333333;
+        }
+
+        .mob-dev {
+            width: 20%;
+            height: 100%;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            color: #333333;
+        }
+
+        .ml_auto {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ml {
+            width: 100%;
+            height: 50%;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .auto {
+            width: 100%;
+            height: 50%;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .data_ide {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .data {
+            width: 100%;
+            height: 60%;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .ide {
+            width: 100%;
+            height: 40%;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .lang_help {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lang {
+            width: 100%;
+            height: 70%;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .help {
+            width: 100%;
+            height: 30%;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .tfd {
+            width: 20%;
+            height: 100%;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .about h2,
+        .skills h2,
+        .mob-dev h2,
+        .web-dev h2,
+        .ml h2,
+        .auto h2,
+        .data h2,
+        .lang h2,
+        .ide h2,
+        .help h2,
+        .tfd h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: #333333;
+        }
+
+        .skills ul,
+        .mob-dev ul,
+        .web-dev ul,
+        .ml ul,
+        .auto ul,
+        .data ul,
+        .lang ul,
+        .ide ul,
+        .help ul,
+        .tfd ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .skills li,
+        .mob-dev li,
+        .web-dev li,
+        .ml li,
+        .auto li,
+        .data li,
+        .lang li,
+        .ide li,
+        \  .help li,
+        .tfd li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            color: #333333;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .skills li:before,
+        .mob-dev li:before,
+        .web-dev li:before,
+        .ml li:before,
+        .auto li:before,
+        .data li:before,
+        .lang li:before,
+        .ide li:before,
+        .help li:before,
+        .tfd li:before {
+            content: "✔ ";
+            color: #009dff;
+
+
+
+        }
+
+       /* For screens up to 426px (Mobile view) */
+@media (max-width: 426px) {
+    .main-container {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .resume {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .upper-sec {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .img-sec {
+        width: 60%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .my-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .name-sec {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .my-name h1 {
+        font-size: 1.5rem;
+    }
+
+    .summary {
+        font-size: 1rem;
+        max-width: 90vw;
+        padding: 0 10px;
+    }
+
+    .lower-sec {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .part-one,
+    .part-two {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about {
+        order: -1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills,
+    .web-dev,
+    .mob-dev,
+    .ml_auto,
+    .data_ide,
+    .lang_help,
+    .tfd {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    li {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/* For screens up to 769px (Tablet view) */
+@media (max-width: 769px) and (min-width: 427px) {
+    .main-container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .resume {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .upper-sec {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .img-sec {
+        width: 50%;  /* Adjust width for better visibility */
+        height: auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-img {
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .name-sec {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .my-name h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .summary {
+        font-size: 1.1rem;
+        max-width: 80vw;
+        padding: 0 15px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .lower-sec {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .part-one,
+    .part-two {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about {
+        order: -1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills,
+    .web-dev,
+    .mob-dev,
+    .ml_auto,
+    .data_ide,
+    .lang_help,
+    .tfd {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    li {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="main-container">
+        <!-- resume page -->
+        <div class="resume">
+            <!-- img and name sec -->
+            <div class="upper-sec">
+                <!-- img sec -->
+                <div class="img-sec">
+                    <img class="my-img" src="../../ASSETS/IMAGES/portfolio_logo.png" alt="Pranamya Kalambe">
+                </div>
+                <!-- name sec -->
+                <div class="name-sec">
+                    <div class="my-name">
+                        <h1>Pranamya Kalambe</h1>
+                    </div>
+                    <div class="summary">
+                        <p>
+                            Full Stack Developer with expertise in frontend technologies (HTML, CSS, JavaScript, React)
+                            and backend development (Node.js, Express). Skilled in database management with MySQL and
+                            MongoDB. Passionate about building efficient, scalable web applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- lower sec -->
+            <div class="lower-sec">
+                <div class="part-one">
+                    <div class="skills">
+                        <h2>Skill Set</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <h2>About Me</h2>
+                        <p>
+                            I'm Pranamya Kalambe, a passionate Full Stack Developer with a strong foundation in web
+                            development. I enjoy creating dynamic and responsive web applications that provide a
+                            seamless user experience. I am always eager to learn new technologies and improve my skills.
+                            I thrive in collaborative environments and enjoy working with teams to bring innovative
+                            ideas to life. My goal is to contribute to impactful projects that make a difference in the
+                            tech
+                            world.
+                        </p>
+                    </div>
+                    <div class="web-dev">
+                        <h2>Web Development</h2>
+                        <ul>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>JavaScript</li>
+                            <li>Web Design</li>
+                            <li>Web Testing</li>
+                            <li>Standard</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="part-two">
+                    <div class="mob-dev">
+                        <h2>Mobile Development</h2>
+                        <ul>
+                            <li>Native Android Developer</li>
+                            <li>Native Web Developer</li>
+                            <li>React</li>
+                            <li>Native Mobile Design</li>
+                            <li>Mobile Testing</li>
+                            <li>Standard</li>
+                        </ul>
+                    </div>
+                    <div class="ml_auto">
+                        <div class="ml">
+                            <h2>Middle Layer</h2>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>API Testing</li>
+                            </ul>
+                        </div>
+                        <div class="auto">
+                            <h2>Automation</h2>
+                            <ul>
+                                <li>Selenium</li>
+                                <li>Cypress</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="data_ide">
+                        <div class="data">
+                            <h2>Database</h2>
+                            <ul>
+                                <li>SQL</li>
+                                <li>PL/SQL</li>
+                                <li>Database Testing</li>
+                                <li>PostgreSQL</li>
+                                <li>Database Design</li>
+                            </ul>
+                        </div>
+                        <div class="ide">
+                            <h2>IDE</h2>
+                            <ul>
+                                <li>Visual Studio Code</li>
+                                <li>Xcode</li>
+                                <li>Android Studio</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lang_help">
+                        <div class="lang">
+                            <h2>Languages Known</h2>
+                            <ul>
+                                <li>C</li>
+                                <li>Java</li>
+                                <li>Swift</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                        <div class="help">
+                            <h2>Helpers</h2>
+                            <ul>
+                                <li>Colour Hunt</li>
+                                <li>Google Font</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tfd">
+                        <h2>Tools For Development</h2>
+                        <ul>
+                            <li>JIRA</li>
+                            <li>GitHub</li>
+                            <li>Source Tree</li>
+                            <li>Postman</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
