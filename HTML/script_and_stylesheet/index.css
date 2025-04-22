@@ -384,10 +384,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
 
   .mob-project-card {
-    width: 30vh;
+    width: 25vh;
     height: 90%;
     background: rgba(0, 157, 255, 0.1);
     border: 0.3vh solid #009dff;
@@ -397,8 +398,18 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     backdrop-filter: blur(1vh);
     will-change: transform;
-    margin-top: 10%;
-    margin-left: 5vw;
+    /* margin-top: 10%;
+    margin-left: 5vw; */
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .mob-space {
+    margin-left: 3vw;
   }
 
   .mob-project-card:hover {
@@ -408,6 +419,48 @@
   .lap-box-three,
   .lap-box-six {
     display: none;
+  }
+
+  .lap-hc-one {
+    background-image: url('../../ASSETS/IMAGES/portfolio/calculator_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-two {
+    background-image: url('../../ASSETS/IMAGES/portfolio/animated_card_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-three {
+    background-image: url('../../ASSETS/IMAGES/portfolio/chess_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-four {
+    background-image: url('../../ASSETS/IMAGES/portfolio/login_page-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-js-two {
+    background-image: url('../../ASSETS/IMAGES/portfolio/kbc_background.jpg_large');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-js-three {
+    background-image: url('../../ASSETS/IMAGES/portfolio/even_odd_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   /* Project Unit End */
@@ -2550,7 +2603,7 @@
   .lap-project-navitem:hover {
     box-shadow: 0px 0px 15px #009dff;
   }
-
+    
   .lap-hc-one {
     background-image: url('../../ASSETS/IMAGES/portfolio/calculator_background.png');
     background-size: cover;
