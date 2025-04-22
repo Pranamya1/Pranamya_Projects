@@ -72,6 +72,12 @@ gsap.from(".project-heading, .lap-project-container", {
     }
 })
 
+// Reset the navbar and ScrollTrigger when the page reloads or revisited
+window.addEventListener('load', () => {
+    gsap.set(".lap-fis-navbar", { opacity: 1, x: 0, y: 0, pointerEvents: "auto" });
+    ScrollTrigger.refresh(); // This ensures ScrollTrigger recalculates all triggers
+});
+
 gsap.to(".lap-fis-navbar", {
     scrollTrigger: {
         trigger: ".home",
@@ -80,13 +86,26 @@ gsap.to(".lap-fis-navbar", {
         end: "top -10%",
         toggleActions: "play none none reverse",
         scrub: 2,
+
+        onEnter: () => {
+            gsap.set(".lap-fis-navbar", { opacity: 1, x: 0, y: 0, pointerEvents: "auto" });
+        },
+
+        onLeaveBack: () => {
+            gsap.to(".lap-fis-navbar", {
+                opacity: 0,
+                x: -60,
+                y: -150,
+                pointerEvents: "none",
+            });
+        }
     },
     opacity: 0,
-    // duration: .5,
     x: -60,
     y: -150,
-    PointerEvent: "none",
-})
+    pointerEvents: "none",
+});
+
 
 if (window.innerWidth >= 1024) {
     gsap.fromTo(".lap-second-navbar",

@@ -316,7 +316,193 @@
         .tfd li:before {
             content: "✔ ";
             color: #009dff;
+
+
+
         }
+
+       /* For screens up to 426px (Mobile view) */
+@media (max-width: 426px) {
+    .main-container {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .resume {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .upper-sec {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .img-sec {
+        width: 60%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .my-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .name-sec {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .my-name h1 {
+        font-size: 1.5rem;
+    }
+
+    .summary {
+        font-size: 1rem;
+        max-width: 90vw;
+        padding: 0 10px;
+    }
+
+    .lower-sec {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .part-one,
+    .part-two {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about {
+        order: -1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills,
+    .web-dev,
+    .mob-dev,
+    .ml_auto,
+    .data_ide,
+    .lang_help,
+    .tfd {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    li {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/* For screens up to 769px (Tablet view) */
+@media (max-width: 769px) and (min-width: 427px) {
+    .main-container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .resume {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .upper-sec {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .img-sec {
+        width: 50%;  /* Adjust width for better visibility */
+        height: auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-img {
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .name-sec {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .my-name h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .summary {
+        font-size: 1.1rem;
+        max-width: 80vw;
+        padding: 0 15px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .lower-sec {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .part-one,
+    .part-two {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about {
+        order: -1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills,
+    .web-dev,
+    .mob-dev,
+    .ml_auto,
+    .data_ide,
+    .lang_help,
+    .tfd {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    li {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+
     </style>
 </head>
 

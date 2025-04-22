@@ -2004,7 +2004,7 @@
     transform: scale(1.2);
     filter: drop-shadow(0px 0px 10px #009dff);
   }
-  }
+}
 
 /* *************************************************************************************************************************************************
 *************************************************************************************************************************************************
@@ -2504,119 +2504,12 @@
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     font-size: 2rem;
     text-decoration: none;
-    color: wheat;
+    color: aliceblue;
   }
 
   .lap-project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px #009dff;
-  }
-
-  .lap-project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 15px #009dff;
-  }
-
-  .lap-box-one {
-    animation: box-one 0.9s forwards;
-    position: relative;
-  }
-
-  @keyframes lap-box-one {
-    0% {
-      top: 0%;
-      left: 0;
-    }
-
-    100% {
-      top: 42vh;
-      left: 45.5vw;
-    }
-  }
-
-  .box-two {
-    animation: box-two 0.9s forwards;
-    position: relative;
-  }
-
-  @keyframes box-two {
-    0% {
-      top: 0%;
-      left: 0;
-    }
-
-    100% {
-      top: 42vh;
-      left: -22.75vw;
-    }
-  }
-
-  .box-three {
-    animation: box-three 0.9s forwards;
-    position: relative;
-  }
-
-  @keyframes box-three {
-    0% {
-      top: 0%;
-      left: 0;
-    }
-
-    100% {
-      top: 0;
-      left: -45.5vw;
-    }
-  }
-
-  .box-four {
-    animation: box-four 0.9s forwards;
-    position: relative;
-  }
-
-  @keyframes box-four {
-    0% {
-      top: 0%;
-      left: 0;
-    }
-
-    100% {
-      top: 0;
-      left: 22.75vw;
-    }
-  }
-
-  .box-five {
-    animation: box-five 0.9s forwards;
-    position: relative;
-  }
-
-  @keyframes box-five {
-    0% {
-      top: 0%;
-      left: 0;
-    }
-
-    100% {
-      top: -42vh;
-      left: 0;
-    }
-  }
-
-  .box-six {
-    animation: box-six 0.9s forwards;
-    position: relative;
-  }
-
-  @keyframes box-six {
-    0% {
-      top: 0%;
-      left: 0;
-    }
-
-    100% {
-      top: -42vh;
-      left: 0;
-    }
   }
 
   .lap-project-navbar {
@@ -2647,7 +2540,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: aliceblue;
     font-size: 2rem;
     transition: box-shadow 0.3s ease-in-out;
     cursor: default;
@@ -2656,6 +2549,48 @@
 
   .lap-project-navitem:hover {
     box-shadow: 0px 0px 15px #009dff;
+  }
+
+  .lap-hc-one {
+    background-image: url('../../ASSETS/IMAGES/portfolio/calculator_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-two {
+    background-image: url('../../ASSETS/IMAGES/portfolio/animated_card_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-three {
+    background-image: url('../../ASSETS/IMAGES/portfolio/chess_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-four {
+    background-image: url('../../ASSETS/IMAGES/portfolio/login_page-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-js-two {
+    background-image: url('../../ASSETS/IMAGES/portfolio/kbc_background.jpg_large');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-js-three {
+    background-image: url('../../ASSETS/IMAGES/portfolio/even_odd_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   /* 3D Modal Unit */
