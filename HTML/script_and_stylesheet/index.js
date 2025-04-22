@@ -1,12 +1,13 @@
-//
 function showProjects(category) {
     document.getElementById("project-title").innerHTML = category.toUpperCase();
 
+    // Hide all project sections
     document.getElementById("html_css-projects").style.display = "none";
     document.getElementById("javascript-projects").style.display = "none";
     document.getElementById("bootstrap-projects").style.display = "none";
     document.getElementById("react-projects").style.display = "none";
 
+    // Show the selected category
     if (category === "html_css") {
         document.getElementById("html_css-projects").style.display = "flex";
     } else if (category === "javascript") {
@@ -18,16 +19,8 @@ function showProjects(category) {
     }
 }
 
-
 // Animation
 // Animation fo home section
-
-gsap.from(".nav-item", {
-    opacity: 0,
-    y: -20,
-    duration: 1,
-    stagger: 0.2
-})
 
 gsap.from("h2", {
     opacity: 0,
@@ -57,63 +50,26 @@ gsap.from(".lap-img-one", {
     delay: 0.5
 })
 
-gsap.from(".img-two", {
+gsap.from(".about-heading, .lap-about-container", {
     opacity: 0,
-    x: -100,
-    duration: 2,
-    scrollTrigger: {
-        trigger: ".img-two",
-        scroller: "body",
-        toggleActions: "play reverse play reverse",
-        scrub: true,
-        end: "top 30%"
-    }
-})
-
-gsap.from([".html", ".css", ".js", ".react"], {
-    opacity: 0,
-    scaleX: 0,
-    transformOrigin: "left center",
-    stagger: 0.2,
-    scrollTrigger: {
-        trigger: ".about",
-        scroller: "body",
-        start: "top 30%",
-        end: "top 10%",
-        toggleActions: "play reverse play reverse",
-        scrub: 2,
-    }
-});
-
-gsap.from([".show-project", ".project-navitem-container"], {
-    opacity: 0,
+    opacity:0,
+    y: 300,
     duration: 1.5,
     scrollTrigger: {
-        trigger: ".project",
-        scroller: "body",
-        start: "top 30%",
-        end: "top 10%",
-        toggleActions: "play reverse play reverse",
-        scrub: 2,
+        trigger: ".lap-about",
+        scroller: "body"
     }
 })
 
-gsap.from(".contact-info-card", {
+gsap.from(".project-heading, .lap-project-container", {
     opacity: 0,
+    opacity:0,
+    y: 300,
     duration: 1.5,
     scrollTrigger: {
-        trigger: ".contact",
-        scroller: "body",
-        start: "top 70%",
-        end: "top 10%",
-        toggleActions: "play reverse play reverse",
-        scrub: 2,
+        trigger: ".lap-project",
+        scroller: "body"
     }
-})
-
-gsap.from(".icons", {
-    opacity: 0,
-    duration: 5
 })
 
 gsap.to(".lap-fis-navbar", {
@@ -126,13 +82,13 @@ gsap.to(".lap-fis-navbar", {
         scrub: 2,
     },
     opacity: 0,
-    duration: .5,
+    // duration: .5,
     x: -60,
     y: -150,
     PointerEvent: "none",
 })
 
-if (window.innerWidth >= 1024) { // You can use 768 if you want tablets included
+if (window.innerWidth >= 1024) {
     gsap.fromTo(".lap-second-navbar",
       {
         opacity: 0,
@@ -156,8 +112,7 @@ if (window.innerWidth >= 1024) { // You can use 768 if you want tablets included
       }
     );
   }
-  
-  
+    
 // Slide Bar (navigation bar for mobile and tablet)
 
 function mob_slidingNavbar() {

@@ -90,35 +90,5 @@
         </form>
         <p>Don't have an account? <a href="#">Create Account</a></p>
     </div>
-
-    <script>
-        function storeCounter(value) {
-            sessionStorage.setItem("counter", value);
-        }
-
-        function getCounter() {
-            return sessionStorage.getItem("counter") ? parseInt(sessionStorage.getItem("counter")) : 0;
-        }
-
-        function Login() {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            let counter = getCounter();
-
-            if (counter >= 2) {
-                alert("Too many invalid attempts! Access denied.");
-                document.getElementById('loginn').hidden = true;
-                window.location.href = "file:///Users/enjoy_14_e/Documents/Pranamya_HTML_Projects_2/HTML/HTML_Workshop/Hotel-menu.html"
-            } else {
-                if (username === "admin" && password === "admin123") {
-                    alert("Successful login!");
-                } else {
-                    counter++;
-                    storeCounter(counter);
-                    alert("Invalid username or password. Attempts left: " + (  counter));
-                }
-            }
-        }
-    </script>
 </body>
 </html>
