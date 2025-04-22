@@ -1,3 +1,4 @@
+
 function showProjects(category) {
     document.getElementById("project-title").innerHTML = category.toUpperCase();
 
