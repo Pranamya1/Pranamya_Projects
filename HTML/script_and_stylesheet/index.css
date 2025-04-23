@@ -198,6 +198,47 @@
     margin-left: 0%;
   }
 
+  .resume-btn {
+    padding: 12px 28px;
+    width: 10vw;
+    font-size: 1rem;
+    color: #00ffff;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #00ffff;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px #00ffff40, 0 0 30px #00ffff20 inset;
+    margin-top: 5%;
+    z-index: 100;
+    margin-left: 40%;
+    text-shadow: 0 0 5px #00ffff80;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .resume-btn a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    margin-left: -25%;
+  }
+  
+  .resume-btn:hover {
+    color: #000;
+    background: #00ffff;
+    box-shadow: 0 0 25px #00ffffaa, 0 0 50px #00ffffaa inset;
+    transform: scale(1.05);
+    text-shadow: none;
+  }
+
+
   /* Home Unit End */
 
   /* About Unit   */
@@ -632,6 +673,18 @@
   .mob-lap-fis-navbar {
     display: none;
   }
+
+  .lap-footer-icons a {
+    color: aliceblue; /* Or any color you want */
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .lap-footer-icons a:hover {
+    color: #ffffff; /* Color on hover */
+  }
 }
 
 /* *************************************************************************************************************************************************
@@ -667,7 +720,7 @@
     display: flex;
     flex-direction: column;
     background-color: black;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
   }
 
   /* Home and Navigation Unit */
@@ -838,6 +891,46 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 0%;
+  }
+
+  .resume-btn {
+    padding: 12px 28px;
+    width: 10vw;
+    font-size: 1rem;
+    color: #00ffff;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #00ffff;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px #00ffff40, 0 0 30px #00ffff20 inset;
+    margin-top: 5%;
+    z-index: 100;
+    margin-left: 40%;
+    text-shadow: 0 0 5px #00ffff80;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .resume-btn a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 10%;
+  }
+  
+  .resume-btn:hover {
+    color: #000;
+    background: #00ffff;
+    box-shadow: 0 0 25px #00ffffaa, 0 0 50px #00ffffaa inset;
+    transform: scale(1.05);
+    text-shadow: none;
   }
 
   /* Home Unit End */
@@ -1270,6 +1363,18 @@
   .mob-lap-fis-navbar {
     display: none;
   }
+
+  .lap-footer-icons a {
+    color: aliceblue; /* Or any color you want */
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .lap-footer-icons a:hover {
+    color: #ffffff; /* Color on hover */
+  }
 }
 
 /* *************************************************************************************************************************************************
@@ -1530,6 +1635,7 @@
 
   .resume-btn {
     padding: 12px 28px;
+    width: 10vw;
     font-size: 1rem;
     color: #00ffff;
     background: rgba(0, 0, 0, 0.3);
@@ -1538,16 +1644,33 @@
     text-decoration: none;
     transition: all 0.3s ease;
     backdrop-filter: blur(6px);
-    box-shadow: 0 0 12px #00ffff40, 0 0 24px #00ffff20 inset;
-    /* margin-bottom: -10%; */
+    box-shadow: 0 0 15px #00ffff40, 0 0 30px #00ffff20 inset;
+    margin-top: 5%;
     z-index: 100;
+    margin-left: 40%;
+    text-shadow: 0 0 5px #00ffff80;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .resume-btn a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 25%;
   }
   
   .resume-btn:hover {
     color: #000;
     background: #00ffff;
-    box-shadow: 0 0 20px #00ffff80, 0 0 40px #00ffff60 inset;
+    box-shadow: 0 0 25px #00ffffaa, 0 0 50px #00ffffaa inset;
     transform: scale(1.05);
+    text-shadow: none;
   }
 
   .lap-img-site-one {
@@ -2095,6 +2218,18 @@
     transform: scale(1.2);
     filter: drop-shadow(0px 0px 10px #009dff);
   }
+
+  .lap-footer-icons a {
+    color: aliceblue; /* Or any color you want */
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .lap-footer-icons a:hover {
+    color: #ffffff; /* Color on hover */
+  }
 }
 
 /* *************************************************************************************************************************************************
@@ -2363,23 +2498,35 @@
     text-decoration: none;
     transition: all 0.3s ease;
     backdrop-filter: blur(6px);
-    box-shadow: 0 0 12px #00ffff40, 0 0 24px #00ffff20 inset;
-    margin-top: 10%;
+    box-shadow: 0 0 15px #00ffff40, 0 0 30px #00ffff20 inset;
+    margin-top: 5%;
     z-index: 100;
     margin-left: 20%;
+    text-shadow: 0 0 5px #00ffff80;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-
+  
   .resume-btn a {
+    display: block;
     height: 100%;
     width: 100%;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 32%;
   }
   
   .resume-btn:hover {
     color: #000;
     background: #00ffff;
-    box-shadow: 0 0 20px #00ffff80, 0 0 40px #00ffff60 inset;
+    box-shadow: 0 0 25px #00ffffaa, 0 0 50px #00ffffaa inset;
     transform: scale(1.05);
+    text-shadow: none;
   }
+  
 
   .lap-img-site-one {
     height: 100%;
@@ -2924,6 +3071,19 @@
     transform: scale(1.2);
     filter: drop-shadow(0px 0px 10px #009dff);
   }
+
+  .lap-footer-icons a {
+    color: aliceblue; /* Or any color you want */
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .lap-footer-icons a:hover {
+    color: #ffffff; /* Color on hover */
+  }
+  
 }
 
 /* *************************************************************************************************************************************************
