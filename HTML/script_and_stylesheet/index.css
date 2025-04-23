@@ -2499,7 +2499,7 @@
     transition: all 0.3s ease;
     backdrop-filter: blur(6px);
     box-shadow: 0 0 15px #00ffff40, 0 0 30px #00ffff20 inset;
-    margin-top: 5%;
+    margin-top: 0%;
     z-index: 100;
     margin-left: 20%;
     text-shadow: 0 0 5px #00ffff80;
