@@ -131,17 +131,11 @@ if (window.innerWidth >= 1024) {
         pointerEvents: "auto"
       }
     );
-  }
-    
-// Slide Bar (navigation bar for mobile and tablet)
+  } 
 
 function mob_slidingNavbar() {
+    console.log("Toggle clicked"); // Optional: for debugging
     const mob_slidebar = document.getElementById("mob_slidebar");
     mob_slidebar.classList.toggle("active");
   }
-
-  function closeNavbarOnScroll() {
-    document.getElementById("mob_slidebar").classList.remove("active");
-  }
-
-  window.onscroll = closeNavbarOnScroll;
+  
