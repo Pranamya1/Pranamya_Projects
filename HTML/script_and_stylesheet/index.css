@@ -1,6 +1,5 @@
-
 /* for Mobile from 426px */
-@media (max-width: 426px) {
+@media (max-width: 425px) {
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -53,6 +52,7 @@
     opacity: 20%;
     background-repeat: no-repeat;
     background-size: 100vh 100vw;
+    display: none;
   }
 
   /* Navigation Unit */
@@ -308,7 +308,7 @@
     align-items: center;
   }
 
-  .mob-heading {
+  .mob-project-heading {
     color: #009dff;
     font-size: 3rem;
     margin-top: -25%;
@@ -371,6 +371,57 @@
     font-size: 1.2rem;
   }
 
+  .lap-hc-one {
+    background-image: url('/ASSETS/IMAGES/portfolio/calculator_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-two {
+    background-image: url('../../ASSETS/IMAGES/portfolio/animated_card_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-three {
+    background-image: url('../../ASSETS/IMAGES/portfolio/chess_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-four {
+    background-image: url('../../ASSETS/IMAGES/portfolio/login_page-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-js-two {
+    background-image: url('../../ASSETS/IMAGES/portfolio/kbc_background.jpg_large');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-js-three {
+    background-image: url('../../ASSETS/IMAGES/portfolio/even_odd_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-boot-one {
+    background-image: url('../../ASSETS/IMAGES/portfolio/sai_medical-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-size: 2.5rem;
+  }
+
   .mob-project-category {
     height: 84.8%;
     width: 100%;
@@ -422,48 +473,6 @@
     display: none;
   }
 
-  .lap-hc-one {
-    background-image: url('../../ASSETS/IMAGES/portfolio/calculator_background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .lap-hc-two {
-    background-image: url('../../ASSETS/IMAGES/portfolio/animated_card_background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .lap-hc-three {
-    background-image: url('../../ASSETS/IMAGES/portfolio/chess_background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .lap-hc-four {
-    background-image: url('../../ASSETS/IMAGES/portfolio/login_page-background.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .lap-js-two {
-    background-image: url('../../ASSETS/IMAGES/portfolio/kbc_background.jpg_large');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .lap-js-three {
-    background-image: url('../../ASSETS/IMAGES/portfolio/even_odd_background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   /* Project Unit End */
   /* Experiment Unit */
   .mob-exp {
@@ -473,10 +482,11 @@
     flex-direction: column;
   }
 
-  .mob-heading {
+  .mob-exp-heading {
     font-size: 3rem;
     text-align: center;
-    margin-top: 2.5%;
+    margin-top: -12%;
+    color: #009dff;
   }
 
   .mob-exp-container {
@@ -506,10 +516,11 @@
     flex-direction: column;
   }
 
-  .mob-heading {
+  .mob-contact-heading {
     font-size: 3rem;
     color: #009dff;
     text-align: center;
+    margin-top: -12%;
   }
 
   .mob-contact-container {
@@ -631,7 +642,7 @@
 ************************************************************************************************************************************************* */
 
 /* for Tablet 426px to 768px */
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 427px) and (max-width: 769px) {
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -1032,10 +1043,67 @@
     will-change: transform;
     margin-top: 10vh;
     margin-left: 7vw;
+    font-size: 2rem;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
   }
 
   .mob-project-card:hover {
     box-shadow: 0px 0px 15px #009dff;
+  }
+
+  .lap-hc-one {
+    background-image: url('../../ASSETS/IMAGES/portfolio/calculator_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-two {
+    background-image: url('../../ASSETS/IMAGES/portfolio/animated_card_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-three {
+    background-image: url('../../ASSETS/IMAGES/portfolio/chess_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-four {
+    background-image: url('../../ASSETS/IMAGES/portfolio/login_page-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-js-two {
+    background-image: url('../../ASSETS/IMAGES/portfolio/kbc_background.jpg_large');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-js-three {
+    background-image: url('../../ASSETS/IMAGES/portfolio/even_odd_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-boot-one {
+    background-image: url('../../ASSETS/IMAGES/portfolio/sai_medical-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-size: 2.5rem;
   }
 
   .lap-box-three,
@@ -1212,7 +1280,7 @@
 ************************************************************************************************************************************************* */
 
 /* for Desktop 769px to 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 770px) and (max-width: 1025px) {
   html {
     scroll-behavior: smooth;
   }
@@ -1398,6 +1466,7 @@
     align-items: center;
     color: rgb(202, 19, 202);
     text-decoration: none;
+    overflow: hidden;
   }
 
   .lap-second-navitem-icon {
@@ -1411,7 +1480,7 @@
   }
 
   .lap-second-nav-icon {
-    margin-left: 3vw;
+    margin-left: 2vw;
   }
 
   /* Home (name) Unit  */
@@ -1499,6 +1568,7 @@
     height: 12%;
     display: flex;
     flex-direction: row;
+    color: #009dff;
   }
 
   .lap-extra {
@@ -1550,7 +1620,7 @@
   }
 
   .lap-introduction {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #f1f1f1;
     margin-left: 10%;
     max-width: 800px;
@@ -1563,7 +1633,7 @@
   .lap-introduction span {
     color: aliceblue;
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
   }
 
   .lap-introduction br {
@@ -1702,119 +1772,13 @@
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     font-size: 2rem;
     text-decoration: none;
-    color: wheat;
+    color: aliceblue;
+    text-align: center;
   }
 
   .lap-project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px #009dff;
-  }
-
-  .lap-project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 15px #009dff;
-  }
-
-  .lap-box-one {
-    animation: box-one 0.9s forwards;
-    position: relative;
-  }
-
-  @keyframes lap-box-one {
-    0% {
-      top: 0%;
-      left: 0;
-    }
-
-    100% {
-      top: 42vh;
-      left: 45.5vw;
-    }
-  }
-
-  .box-two {
-    animation: box-two 0.9s forwards;
-    position: relative;
-  }
-
-  @keyframes box-two {
-    0% {
-      top: 0%;
-      left: 0;
-    }
-
-    100% {
-      top: 42vh;
-      left: -22.75vw;
-    }
-  }
-
-  .box-three {
-    animation: box-three 0.9s forwards;
-    position: relative;
-  }
-
-  @keyframes box-three {
-    0% {
-      top: 0%;
-      left: 0;
-    }
-
-    100% {
-      top: 0;
-      left: -45.5vw;
-    }
-  }
-
-  .box-four {
-    animation: box-four 0.9s forwards;
-    position: relative;
-  }
-
-  @keyframes box-four {
-    0% {
-      top: 0%;
-      left: 0;
-    }
-
-    100% {
-      top: 0;
-      left: 22.75vw;
-    }
-  }
-
-  .box-five {
-    animation: box-five 0.9s forwards;
-    position: relative;
-  }
-
-  @keyframes box-five {
-    0% {
-      top: 0%;
-      left: 0;
-    }
-
-    100% {
-      top: -42vh;
-      left: 0;
-    }
-  }
-
-  .box-six {
-    animation: box-six 0.9s forwards;
-    position: relative;
-  }
-
-  @keyframes box-six {
-    0% {
-      top: 0%;
-      left: 0;
-    }
-
-    100% {
-      top: -42vh;
-      left: 0;
-    }
   }
 
   .lap-project-navbar {
@@ -1854,6 +1818,57 @@
 
   .lap-project-navitem:hover {
     box-shadow: 0px 0px 15px #009dff;
+  }
+
+  .lap-hc-one {
+    background-image: url('../../ASSETS/IMAGES/portfolio/calculator_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-two {
+    background-image: url('../../ASSETS/IMAGES/portfolio/animated_card_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-three {
+    background-image: url('../../ASSETS/IMAGES/portfolio/chess_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-hc-four {
+    background-image: url('../../ASSETS/IMAGES/portfolio/login_page-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-js-two {
+    background-image: url('../../ASSETS/IMAGES/portfolio/kbc_background.jpg_large');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-js-three {
+    background-image: url('../../ASSETS/IMAGES/portfolio/even_odd_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .lap-boot-one {
+    background-image: url('../../ASSETS/IMAGES/portfolio/sai_medical-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-size: 2.5rem;
   }
 
   /* 3D Modal Unit */
@@ -2068,7 +2083,7 @@
 ************************************************************************************************************************************************* */
 
 /* for Desktop 1025px to 1440px */
-@media (min-width: 1025px) and (max-width: 1441px) {
+@media (min-width: 1026px) and (max-width: 1440px) {
   html {
     scroll-behavior: smooth;
   }
@@ -2648,7 +2663,7 @@
   }
 
   .lap-boot-one {
-    background-image: url('../../ASSETS/IMAGES/portfolio/sai_medical_background.png');
+    background-image: url('../../ASSETS/IMAGES/portfolio/sai_medical-background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2865,4 +2880,3 @@
 *************************************************************************************************************************************************
 *************************************************************************************************************************************************
 /* ******************************************************************************************************************************************************** */
-
