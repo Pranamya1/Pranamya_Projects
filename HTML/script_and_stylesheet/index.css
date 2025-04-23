@@ -2271,15 +2271,6 @@
     z-index: 1;
   }
 
-  /* Video Background  */
-  .bg-video {
-    transform: translate(0%, 0%);
-    position: absolute;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 35%;
-  }
-
   /* Navigation Unit  */
   .navbar-sec {
     height: 15%;
@@ -2328,10 +2319,11 @@
   }
 
   .lap-nav-name {
-    color: #009dff;
+    color: black;
     font-size: 2rem;
     margin-left: 1vw;
     cursor: default;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
   }
 
   /* Lap nav-items */
@@ -3106,4 +3098,8 @@ h1 {
 
 .lap-hi {
   color: #009dff;
+}
+
+.lap-nav-name {
+  color: #000;
 }
