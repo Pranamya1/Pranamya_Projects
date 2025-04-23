@@ -1,5 +1,5 @@
 /* for Mobile from 426px */
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -81,7 +81,7 @@
     border-radius: 0.3rem;
     border: 1px solid #009dff;
     cursor: pointer;
-    z-index: 10003;
+    z-index: 1000000;
     display: flex;
     align-items: center;
     justify-content: center;
