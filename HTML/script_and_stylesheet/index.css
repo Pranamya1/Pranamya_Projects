@@ -1,3 +1,4 @@
+
 /* for Mobile from 426px */
 @media (max-width: 426px) {
   html {
@@ -2478,9 +2479,9 @@
     transition: all 0.3s ease;
     backdrop-filter: blur(6px);
     box-shadow: 0 0 15px #00ffff40, 0 0 30px #00ffff20 inset;
-    margin-top: 2.5%;
+    margin-top: -10%;
     z-index: 100;
-    margin-left: 20%;
+    margin-left: 70%;
     text-shadow: 0 0 5px #00ffff80;
     position: relative;
     overflow: hidden;
