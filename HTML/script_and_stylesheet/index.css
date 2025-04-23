@@ -1528,6 +1528,28 @@
     margin-left: 11%;
   }
 
+  .resume-btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+    color: #00ffff;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #00ffff;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 12px #00ffff40, 0 0 24px #00ffff20 inset;
+    /* margin-bottom: -10%; */
+    z-index: 100;
+  }
+  
+  .resume-btn:hover {
+    color: #000;
+    background: #00ffff;
+    box-shadow: 0 0 20px #00ffff80, 0 0 40px #00ffff60 inset;
+    transform: scale(1.05);
+  }
+
   .lap-img-site-one {
     height: 100%;
     width: 40%;
@@ -2328,6 +2350,35 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 11%;
+  }
+
+  .resume-btn {
+    padding: 12px 28px;
+    width: 10vw;
+    font-size: 1rem;
+    color: #00ffff;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #00ffff;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 12px #00ffff40, 0 0 24px #00ffff20 inset;
+    margin-top: 10%;
+    z-index: 100;
+    margin-left: 20%;
+  }
+
+  .resume-btn a {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .resume-btn:hover {
+    color: #000;
+    background: #00ffff;
+    box-shadow: 0 0 20px #00ffff80, 0 0 40px #00ffff60 inset;
+    transform: scale(1.05);
   }
 
   .lap-img-site-one {
