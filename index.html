@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +12,6 @@
     <link rel="stylesheet" href="HTML/script_and_stylesheet/index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
     <link rel="x-icon" href="portfolio_logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Pranamya's Portfolio</title>
 </head>
 
@@ -20,6 +20,12 @@
     <div class="main-container">
         <!-- Home section -->
         <div class="lap-home mob-home" id="home">
+            <!-- background video -->
+            <div class="bg-wrapper">
+                <video class="bg-video" autoplay muted loop>
+                    <source src="ASSETS/VIDEO/background.mp4" type="video/mp4" />
+                </video>
+            </div>
             <!-- navbar saction -->
             <div class="navbar-sec">
                 <!-- nav bar for laptop -->
@@ -34,15 +40,13 @@
                             <a href="#home" class="lap-fis-navitem">Home</a>
                             <a href="#about" class="lap-fis-navitem">About</a>
                             <a href="#project" class="lap-fis-navitem">Project</a>
-                            <a href="#exp" class="lap-fis-navitem">Experiments</a>
-                            <!-- <a href="#oops" class="lap-fis-navitem">OOPS</a> -->
                             <a href="#contact" class="lap-fis-navitem">Contacts</a>
                         </div>
                         <div class="lap-navbar-three">
                             <div class="lap-nav-icons">
-                                <a href="https://github.com/Pranamya1/Pranamya_Projects" class="fab fa-github"></a>
+                                <a href="" class="fab fa-github"></a>
                                 <a href="" class="fab fa-microsoft"></a>
-                                <a href="https://www.linkedin.com/in/pranamya-kalambe-a3594b319/" class="fab fa-linkedin-in"></a>
+                                <a href="" class="fab fa-linkedin-in"></a>
                             </div>
                         </div>
                     </div>
@@ -53,18 +57,17 @@
                     <div class="mob-slide-button" onclick="mob_slidingNavbar()">☰</div>
                 </div>
                 <div class="lap-second-navbar mob-slidebar" id="mob_slidebar">
-                    <div class="lap-second-nav-one mob-nav-one">
-                        <a href="#home" class="lap-second-navitem mob-navitem">Home</a>
-                        <a href="#about" class="lap-second-navitem mob-navitem">About</a>
-                        <a href="#project" class="lap-second-navitem mob-navitem">Projects</a>
-                        <a href="#exp" class="lap-second-navitem mob-navitem">Experiments</a>
-                        <a href="#contact" class="lap-second-navitem mob-navitem">Contacts</a>
-                    </div>
+                   <div class="lap-second-nav-one mob-nav-one">
+                    <a href="#home" class="lap-second-navitem mob-navitem">Home</a>
+                    <a href="#about" class="lap-second-navitem mob-navitem">About</a>
+                    <a href="#project" class="lap-second-navitem mob-navitem">Projects</a>
+                    <a href="#contact" class="lap-second-navitem mob-navitem">Contacts</a>
+                   </div>
                     <div class="mob-navitems-icons lap-second-navitem-icon">
                         <div class="mob-nav-icons">
-                            <a href="https://github.com/Pranamya1/Pranamya_Projects" class="lap-second-nav-icon fab fa-github"></a>
+                            <a href="" class="lap-second-nav-icon fab fa-github"></a>
                             <a href="" class="lap-second-nav-icon fab fa-microsoft"></a>
-                            <a href="https://www.linkedin.com/in/pranamya-kalambe-a3594b319/" class="lap-second-nav-icon fab fa-linkedin-in"></a>
+                            <a href="" class="lap-second-nav-icon fab fa-linkedin-in"></a>
                         </div>
                     </div>
                 </div>
@@ -72,13 +75,14 @@
             <!-- Lap name and img section -->
             <div class="lap-name-img mob-name-img">
                 <div class="lap-name">
-                    <h2 class="lap-hi">Hi,</h2>
+                    <h2>Hi,</h2>
                     <h1 class="lap-im mob-im">I'm</h1>
                     <h1 class="lap-my-name mob-my-name">Pranamya</h1>
                     <h1 class="lap-hanging mob-hanging">Kalambe</h1>
                     <div class="lap-typing mob-typing">a Full Stack Developer</div>
-                    <div class="resume-btn"><a href="HTML/HTML_Workshop/resume.html" target="_blank">Resume</a></div>
+                    <button class="resume-btn"><a href="">Resume</a></button>
                 </div>
+
                 <div class="lap-img-site-one">
                     <div class="lap-img-one">
                         <!-- Optional: insert image inside -->
@@ -152,46 +156,41 @@
                     <!-- HTML Projects -->
                     <div class="lap-project-category mob-project-category" id="html_css-projects">
                         <div class="lap-part-one mob-part-one">
-                            <a class="lap-project-card mob-project-card lap-hc-one mob-hc-one"
-                                href="HTML/HTML_Workshop/calculator_ui.html">Calculator UI</a>
-                            <a class="lap-project-card mob-project-card lap-hc-two mob-space"
-                                href="HTML/HTML_Workshop/css_animation.html">CSS Animated Cards</a>
+                            <a class="lap-project-card mob-project-card lap-hc-one mob-hc-one" href="HTML/HTML_Workshop/calculator_ui.html">Calculator UI</a>
+                            <a class="lap-project-card mob-project-card lap-hc-two mob-space" href="HTML/HTML_Workshop/css_animation.html">CSS Animated Cards</a>
                         </div>
                         <div class="lap-part-two mob-part-two">
-                            <a class="lap-project-card mob-project-card lap-hc-four"
-                                href="HTML/HTML_Workshop/login-page.html">Login Page</a>
-                            <a class="lap-project-card mob-project-card lap-hc-three mob-space"
-                                href="HTML/HTML_Workshop/flexchess.html">Chess</a>
+                            <a class="lap-project-card mob-project-card lap-hc-four" href="HTML/HTML_Workshop/login-page.html">Login Page</a>
+                            <a class="lap-project-card mob-project-card lap-hc-three mob-space" href="HTML/HTML_Workshop/flexchess.html">Chess</a>
                         </div>
                     </div>
                     <!-- JS Projects -->
-                    <div class="lap-project-category mob-project-category" id="javascript-projects"
-                        style="display: none;">
+                    <div class="lap-project-category mob-project-category" id="javascript-projects" style="display: none;">
                         <div class="lap-part-one mob-part-one">
-                            <a class="lap-project-card mob-project-card lap-hc-one"
-                                href="HTML/HTML_Workshop/calculator.html">Working Calculator</a>
-                            <a class="lap-project-card mob-project-card lap-js-two mob-space"
-                                href="HTML/HTML_Workshop/kbc.html">KBC Game</a>
+                            <a class="lap-project-card mob-project-card lap-hc-one" href="HTML/HTML_Workshop/calculator.html">Working Calculator</a>
+                            <a class="lap-project-card mob-project-card lap-js-two mob-space" href="HTML/HTML_Workshop/kbc.html">KBC Game</a>
                         </div>
                         <div class="lap-part-two mob-part-two">
-                            <a class="lap-project-card mob-project-card lap-js-three"
-                                href="HTML/HTML_Workshop/even_odd.html">Even Odd Checker</a>
+                            <a class="lap-project-card mob-project-card lap-js-three" href="HTML/HTML_Workshop/even_odd.html">Even Odd Checker</a>
                         </div>
                     </div>
                     <!-- Bootstrap Projects -->
-                    <div class="lap-project-category mob-project-category" id="bootstrap-projects"
-                        style="display: none;">
+                    <div class="lap-project-category mob-project-category" id="bootstrap-projects" style="display: none;">
                         <div class="lap-part-one mob-part-one">
-                            <a class="lap-project-card mob-project-card lap-boot-one"
-                                href="../Sai_Medical/bootstap/index.html">Sai Medical</a>
+                            <a class="lap-project-card mob-project-card lap-boot-one" href="../Sai_Medical/bootstap/index.html">Sai Medical</a>
+                            <!-- <a class="lap-project-card mob-project-card lap-box-two" href="#">2</a>
+                            <a class="lap-project-card mob-project-card lap-box-three" href="#">3</a> -->
                         </div>
                         <div class="lap-part-two mob-part-two">
+                            <!-- <a class="lap-project-card mob-project-card lap-box-four" href="#">4</a>
+                            <a class="lap-project-card mob-project-card lap-box-five" href="#">5</a>
+                            <a class="lap-project-card mob-project-card lap-box-six" href="#">6</a> -->
                         </div>
                     </div>
                     <!-- React Projects -->
                     <div class="lap-project-category mob-project-category" id="react-projects" style="display: none;">
                         <div class="lap-part-one mob-part-one">
-                            <a class="lap-project-card mob-project-card lap-box-one" href="#">1</a>
+                            <a class="lap-project-card mob-project-card lap-box-one" href="https://delightful-bombolone-a74e56.netlify.app/">1</a>
                             <a class="lap-project-card mob-project-card lap-box-two" href="#">2</a>
                             <a class="lap-project-card mob-project-card lap-box-three" href="#">3</a>
                         </div>
@@ -249,24 +248,24 @@
                 <div class="lap-contact-info mob-contact-info">
                     <div class="lap-my-info mob-my-info">
                         <!-- contact card -->
-                        <a href="tel:+918421319751" class="lap-contact-info-card mob-contact-info-card" style="text-decoration: none; color: inherit;">
+                        <div class="lap-contact-info-card mob-contact-info-card">
                             <div class="lap-logo-img mob-logo-img">
                                 <img class="lap-logo-fit mob-logo-fit" src="ASSETS/IMAGES/call.png" alt="Phone">
                             </div>
                             <div class="lap-info mob-info">+91 84213 19751</div>
-                        </a>                        
-                        <a href="mailto:pranamya653@gmail.com" class="lap-contact-info-card mob-contact-info-card" style="margin-top: 5%;">
+                        </div>
+                        <div class="lap-contact-info-card mob-contact-info-card" style="margin-top: 5%;">
                             <div class="lap-logo-img mob-logo-img">
-                            <img class="lap-logo-fit mob-logo-fit" src="ASSETS/IMAGES/email.webp" alt="Email">
+                                <img class="lap-logo-fit mob-logo-fit" src="ASSETS/IMAGES/email.webp" alt="Email">
                             </div>
                             <div class="lap-info mob-info">pranamya653@gmail.com</div>
-                        </a>                          
-                        <a href="https://www.google.com/maps/place/Nagpur,+Maharashtra,+India" target="_blank" class="lap-contact-info-card mob-contact-info-card" style="margin-top: 5%;">
+                        </div>
+                        <div class="lap-contact-info-card mob-contact-info-card" style="margin-top: 5%;">
                             <div class="lap-logo-img mob-logo-img">
-                            <img class="lap-logo-fit mob-logo-fit" src="ASSETS/IMAGES/location.png" alt="Location">
+                                <img class="lap-logo-fit mob-logo-fit" src="ASSETS/IMAGES/location.png" alt="Location">
                             </div>
                             <div class="lap-info mob-info">Nagpur, Maharashtra, India</div>
-                        </a>                          
+                        </div>
                     </div>
                 </div>
             </div>
@@ -280,12 +279,13 @@
                 </div>
                 <div class="lap-footer-right mob-footer-right">
                     <h4>Contact Me</h4>
-                    <div class="lap-footer-icons">
-                        <a href="https://github.com/Pranamya1/Pranamya_Projects " class="fab fa-github"></a>
-                        <a href="" class="fab fa-microsoft"></a>
-                        <a href="https://www.linkedin.com/in/pranamya-kalambe-a3594b319/" class="fab fa-linkedin-in"></a>
-                    </div> 
+                    <div class="lap-social-icons mob-social-icons">
+                        <a href="https://www.linkedin.com/in/pranamya-kalambe-a3594b319/">
+                            <img src="ASSETS/IMAGES/linked-in.jpg">
+                        </a>
+                    </div>
                 </div>
+            </div>
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
